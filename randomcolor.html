@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Background color</title>
+    <style>
+      button {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Welcome</h1>
+        <button id = "btn">Click me</button> -->
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+    <button>Click</button>
+
+    <script>
+      function randomColor() {
+        let r = Math.floor(Math.random() * 255);
+        let g = Math.floor(Math.random() * 255);
+        let b = Math.floor(Math.random() * 255);
+        return `rgb(${r},${g}, ${b})`;
+      }
+
+      let buttons = document.querySelectorAll("button");
+      for (let button of buttons) {
+        button.addEventListener("click", colors);
+      }
+      let headings = document.querySelectorAll("h1");
+      for (let heading of headings) {
+        heading.addEventListener("click", colors);
+      }
+      function colors() {
+        this.style.backgroundColor = randomColor();
+        this.style.color = randomColor();
+      }
+    </script>
+  </body>
+</html>
